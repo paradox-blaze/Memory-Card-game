@@ -54,9 +54,9 @@ const Cards = () => {
                 return initalClicked;
             }
             else {
-                setScore(prevNumber => prevNumber + 0.5)
+                setScore(prevNumber => prevNumber + 1)
                 if (score >= highscore) {
-                    setHighscore(prevhighscore => prevhighscore + 0.5);
+                    setHighscore(prevhighscore => prevhighscore + 1);
                 }
 
                 return { ...prevState, [pokemon]: true };
